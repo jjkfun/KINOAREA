@@ -1,0 +1,236 @@
+.trailers {
+  padding-bottom: 75px;
+
+  &__current {
+    position: relative;
+  }
+
+  &__cover {
+    height: 80vh;
+    width: 100%;
+    max-height: 735px;
+
+    @include tablet {
+      max-height: 350px;
+    }
+
+    @include mobile {
+      max-height: 200px;
+    }
+  }
+
+  .section__top {
+    @include mobile {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  .section__link {
+    @include mobile {
+      @include text(18px, 700, 22px);
+    }
+  }
+
+  &__cover {
+    height: 765px;
+    width: 100%;
+    max-height: 735px;
+    border-radius: 10px;
+
+    @include mobile {
+      max-height: 220px;
+    }
+  }
+
+  &__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 73px;
+    height: 63px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    @include mobile {
+      width: 22px !important;
+      height: 19px !important;
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: space-between
+    }
+  }
+
+  &__title {
+    @include text(45px, 900, 57px);
+    color: $text-white;
+    margin-right: 30px;
+
+    @include mobile {
+      @include text(25px, 900, 31px);
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 0;
+      gap: 5px;
+    }
+  }
+
+  .social {
+    flex: 1;
+    padding-top: 5px;
+
+    // &__link {}
+
+
+    img {
+      @include mobile {
+        height: 14px;
+        width: 14px;
+      }
+
+
+    }
+  }
+
+  &__reactions {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b2133;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+    @include mobile {
+      width: 30px;
+      height: 30px;
+
+      img {
+        max-width: 13px
+      }
+    }
+  }
+
+  &__numbers {
+    @include text(15px, 400, 17px);
+    color: $text-white;
+    text-align: center;
+    margin-top: 8px;
+
+
+    @include mobile {
+      @include text(9px, 400, 10px);
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transform: scaleY(-1);
+
+    &::-webkit-scrollbar {
+      background-color: $bg-bark-blue-100;
+      border-radius: 10px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $bg-blue;
+      border-radius: 10px;
+    }
+  }
+
+  &__column {
+    transform: scaleY(-1);
+
+    h4 {
+      @include text(20px, 900, 25px);
+      color: $text-white;
+      margin-top: 10px;
+    }
+  }
+
+  &__other {
+    width: 342px;
+
+    @include mobile {
+      width: 178px;
+    }
+  }
+
+  &__poster {
+    position: relative;
+    cursor: pointer;
+
+    .trailers__play {
+      width: 35px;
+      height: 31px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $shadow;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    &:hover {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  img {
+    height: 17px;
+    width: 17px;
+  }
+}

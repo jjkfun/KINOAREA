@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo logo">
+          <a class="logo__link" href="./index.html">
+            <img class="logo__image" src="./img/l.svg" alt="Logo" />
+            <span class="logo__text">Kino</span
+            ><span class="logo__text">area</span>
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Афиша</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Медиа</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Фильмы</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Актёры</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Подборки</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Категории</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions actions">
+          <button class="actions__search button-icon">
+            <img src="./img/search.svg" alt="Search" />
+          </button>
+          <button class="acitons__sign-in button-primary">Войти</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__top section__top">
+              <h1 class="hero__title section__title">Сейчас в кино</h1>
+              <ul class="hero__list section-list">
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Все</a>
+                </li>
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Боевики</a>
+                </li>
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Приключения</a>
+                </li>
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Комедии</a>
+                </li>
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Фантастика</a>
+                </li>
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Триллеры</a>
+                </li>
+                <li class="section-list__item">
+                  <a href="#" class="section-list__link">Драма</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero__row">
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-2.png" alt="Побег из Претории" />
+                  <span class="hero__rating">8.50</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">
+                  Звёздные войны: Скайуокер. Восход
+                </h4>
+                <span class="hero__genre"
+                  >Фантастика, фэнтези, боевик, приключения</span
+                >
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-3.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-4.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-5.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-6.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-7.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="col-3 hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-7.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+            </div>
+
+            <div class="hero__buttons">
+              <button class="button-secondary">Все новинки</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trailers">
+        <div class="container">
+          <div class="section__top">
+            <h1 class="hero__title section__title">Новые трейлеры</h1>
+            <a class="section__link" href="#">
+              <span>Все трейлеры</span>
+              <img src="./img/arrow-right.svg" alt="All trailers" />
+            </a>
+          </div>
+          <div class="trailers__current">
+            <img
+              class="trailers__cover"
+              src="./img/trailers-bg.png"
+              alt="Форсаж 9"
+            />
+            <img class="trailers__play" src="./img/play.svg" alt="Играть" />
+          </div>
+          <div class="trailers__details">
+            <h4 class="trailers__title">Форсаж 9</h4>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./img/vk-brands.svg" alt="Vk" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./img/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./img/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./img/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./img/kebab-menu.svg" alt="Menu" />
+                </a>
+              </li>
+            </ul>
+            <div class="trailers__reactions">
+              <div class="trailers__like">
+                <div class="trailers__icon">
+                  <img src="./img/like.svg" alt="Лайкнуть" />
+                </div>
+                <div class="trailers__numbers">3 245</div>
+              </div>
+              <div class="trailers__dislike">
+                <div class="trailers__icon">
+                  <img src="./img/like.svg" alt="Дизлайкнуть" />
+                </div>
+                <div class="trailers__numbers">420</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trailers__others">
+            <div class="trailers__row">
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+              <div class="trailers__column">
+                <div class="trailers__poster">
+                  <img
+                    class="trailers__other"
+                    src="./img/mulan.png"
+                    alt="Mulan"
+                  />
+                  <img class="trailers__play" src="./img/play.svg" alt="Play" />
+                </div>
+                <h4>Мулан</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular">
+        <div class="container">
+          <div class="section__top">
+            <h1 class="section__title">Популярные фильмы</h1>
+            <ul class="section-list">
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">Всё время</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">2020</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">2019</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">2018</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">2017</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">2016</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">2015</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Slider main container -->
+          <div class="popular__slider swiper">
+            <!-- Additional required wrapper -->
+            <div class="popular__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="popular__column swiper-slide hero__column">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+            </div>
+
+            <div class="popular__prev swiper-button-prev">
+              <img src="./img/arrow-right.svg" alt="Назад" />
+            </div>
+            <div class="popular__next swiper-button-next">
+              <img src="./img/arrow-right.svg" alt="Далее" />
+            </div>
+
+            <div class="popular__pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="persons">
+        <div class="container">
+          <div class="section__top">
+            <h1 class="section__title">Популярные персоны</h1>
+            <ul class="section-list">
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">За год</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">За месяц</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">За неделю</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="persons__row">
+            <div class="col-4">
+              <img
+                class="persons__avatar"
+                src="./img/kventin.png"
+                alt="kventin tarantino"
+              />
+              <span class="persons__rating">1-е место</span>
+              <h4 class="persons__name">Квентин Тарантино</h4>
+              <h5 class="persons__latin">Quentin Tarantino</h5>
+              <span class="persons__age">57 лет</span>
+            </div>
+            <div class="col-4">
+              <img
+                class="persons__avatar"
+                src="./img/jason.png"
+                alt="Jason Statham"
+              />
+              <span class="persons__rating">2-е место</span>
+              <h4 class="persons__name">Джейсон Стейтем</h4>
+              <h5 class="persons__latin">Jason Statham</h5>
+              <span class="persons__age">52 года</span>
+            </div>
+            <div class="col-4">
+              <ul class="persons__list">
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">3-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">4-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">5-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">6-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">3-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">4-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">5-е место</span>
+                </li>
+                <li class="persons__item">
+                  <div class="persons__details">
+                    <h3>Тинто Брасс</h3>
+                    <h5>Tinto Brass</h5>
+                    <span class="persons__age">87 лет</span>
+                  </div>
+                  <span class="persons__place">6-е место</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="section__top">
+            <h1 class="section__title">Последние новости</h1>
+            <a class="section__link" href="#">
+              <span>Все новости</span>
+              <img src="./img/arrow-right.svg" alt="All trailers" />
+            </a>
+          </div>
+
+          <div class="news__row">
+            <div class="col-9">
+              <img
+                class="news__cover"
+                src="./img/james-bond.png"
+                alt="James Bond"
+              />
+              <div class="news__top">
+                <span>15 Апр 2020</span>
+                <span>
+                  <img src="./img/eye.svg" alt="" />
+                  242
+                </span>
+                <span>
+                  <img src="./img/comment.svg" alt="" />
+                  14
+                </span>
+              </div>
+              <div class="news-bottom">
+                <h3 class="news__title">
+                  Не время умирать. Перенос релиза фильма
+                </h3>
+                <p class="news__description">
+                  Но действия представителей оппозиции в равной степени
+                  предоставлены сами себе. В рамках спецификации современных
+                  стандартов, стремящиеся вытеснить традиционное производство,
+                  нанотехнологии указаны как претенденты на роль ключевых
+                  факторов.
+                </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <ul class="news__list">
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+                <li class="news__item">
+                  <img src="./img/sony.png" alt="sony" />
+                  <span>15 Апр 2020</span>
+                  <h5>Как изменили Соника с последнего анонса</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="expected">
+        <div class="container">
+          <div class="section__top">
+            <h1 class="hero__title section__title">Ожидаемые новинки</h1>
+            <div class="expected__buttons">
+              <div class="expected__prev swiper-button-prev">
+                <img src="./img/arrow-right.svg" alt="Назад" />
+              </div>
+              <div class="expected__pagination"></div>
+              <div class="expected__next swiper-button-next">
+                <img src="./img/arrow-right.svg" alt="Далее" />
+              </div>
+            </div>
+          </div>
+          <div class="expected__row swiper">
+            <div class="expected__slider swiper-wrapper">
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+              <div class="hero__column swiper-slide">
+                <div class="hero__poster">
+                  <img src="./img/hero-poster-1.png" alt="Побег из Претории" />
+                  <span class="hero__rating">6.70</span>
+                  <button class="button-primary hero__film">
+                    Карточка фильма
+                  </button>
+                </div>
+                <h4 class="hero__subtitle">Побег из Претории</h4>
+                <span class="hero__genre">Триллер</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cash-fees">
+        <div class="container">
+          <div class="section__top">
+            <h2 class="section__title">
+              Кассовые сборы
+
+              <span class="section__subtitle">13 марта — 15 марта</span>
+            </h2>
+            <ul class="section-list">
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">Россия</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">Весь мир</a>
+              </li>
+              <li class="section-list__item">
+                <a href="#" class="section-list__link">США и Канада</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cash-fees__row">
+            <div class="cash-fees__column">
+              <img src="./img/bloodshot.png" alt="bloodshot" />
+              <div class="cash-fees__content">
+                <h5 class="cash-fees__title">1. Бладшот</h5>
+                <div class="cash-fees__budget">$13 млн</div>
+                <div class="cash-fees__period">$15.1 млн за 4 недели</div>
+              </div>
+            </div>
+            <div class="cash-fees__column">
+              <img src="./img/forward.png" alt="bloodshot" />
+              <div class="cash-fees__content">
+                <h5 class="cash-fees__title">1. Бладшот</h5>
+                <div class="cash-fees__budget">$13 млн</div>
+                <div class="cash-fees__period">$15.1 млн за 4 недели</div>
+              </div>
+            </div>
+            <div class="cash-fees__column">
+              <img src="./img/invisible.png" alt="bloodshot" />
+              <div class="cash-fees__content">
+                <h5 class="cash-fees__title">1. Бладшот</h5>
+                <div class="cash-fees__budget">$13 млн</div>
+                <div class="cash-fees__period">$15.1 млн за 4 недели</div>
+              </div>
+            </div>
+            <div class="cash-fees__column">
+              <img src="./img/sony.png" alt="bloodshot" />
+              <div class="cash-fees__content">
+                <h5 class="cash-fees__title">1. Бладшот</h5>
+                <div class="cash-fees__budget">$13 млн</div>
+                <div class="cash-fees__period">$15.1 млн за 4 недели</div>
+              </div>
+            </div>
+            <div class="cash-fees__column">
+              <img src="./img/gentlemen.png" alt="bloodshot" />
+              <div class="cash-fees__content">
+                <h5 class="cash-fees__title">1. Бладшот</h5>
+                <div class="cash-fees__budget">$13 млн</div>
+                <div class="cash-fees__period">$15.1 млн за 4 недели</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__content">
+            <div class="subscribe__logo logo">
+              <a class="logo__link" href="./index.html">
+                <img class="logo__image" src="./img/logo.svg" alt="Logo" />
+                <span class="logo__text">Kino</span
+                ><span class="logo__text">area</span>
+              </a>
+            </div>
+            <h2 class="subscribe__title">Подпишитесь на E-mail рассылку</h2>
+            <p class="subscribe__description">
+              Если хотиет быть в курсе последних новостей и новинок кино -
+              заполните форму ниже и оформите бесплатную E-mail рассылку!
+            </p>
+            <form action="" class="subscribe__form">
+              <div>
+                <label for="">
+                  <input type="text" placeholder="Введите свой E-mail адрес" />
+                </label>
+                <button class="button-warning">Подписаться</button>
+              </div>
+              <div class="subscribe__conditions checkbox-wrapper-4">
+                <input class="inp-cbx" id="morning" type="checkbox" />
+                <label class="cbx" for="morning"
+                  ><span>
+                    <svg width="12px" height="10px">
+                      <use xlink:href="#check-4"></use></svg
+                  ></span>
+                  <p>
+                    Соглашаюсь на условия
+                    <a href="#"> политики конфиденциальности </a>
+                  </p>
+                </label>
+                <svg class="inline-svg">
+                  <symbol id="check-4" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </symbol>
+                </svg>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <ul class="social">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/vk-brands.svg" alt="Vk" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Афиша</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Медиа</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Фильмы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Актёры</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Новости</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Подборки</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Категории</a>
+              </li>
+            </ul>
+          </nav>
+          <h4 class="footer__copyright">2020 © Kinoarea. Все права защищены</h4>
+          <a class="footer__confidencial" href="#"
+            >Политика конфиденциальности</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const swiper = new Swiper(".popular__slider", {
+        loop: true, // Бесконечное повторение
+        slidesPerView: 4, // Количество слайдеров за 1 раз
+        navigation: {
+          nextEl: ".popular__next", // кнопка далее
+          prevEl: ".popular__prev", // кнопка назад
+        },
+        pagination: {
+          el: ".popular__pagination",
+          type: "fraction",
+        },
+      });
+
+      new Swiper(".expected__row", {
+        loop: true, // Бесконечное повторение
+        slidesPerView: 4, // Количество слайдеров за 1 раз
+        navigation: {
+          nextEl: ".expected__next", // кнопка далее
+          prevEl: ".expected__prev", // кнопка назад
+        },
+        pagination: {
+          el: ".expected__pagination",
+          type: "fraction",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    background-color: #1E2538;
+    font-family: Qanelas, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1430px;
+    margin: 0 auto;
+
+    @include tablet {
+        padding: 0 50px;
+    }
+
+    @include mobile {
+        padding: 0 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+main {
+    overflow: hidden;
+}

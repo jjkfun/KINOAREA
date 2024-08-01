@@ -1,0 +1,136 @@
+.subscribe {
+  .container {
+    background: url("../img/subscribe-bg.png") no-repeat center;
+    background-size: cover;
+    padding: 75px 0 105px;
+    box-sizing: border-box;
+    color: $text-white;
+
+    @include mobile-tablet {
+      padding: 25px 0;
+    }
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include mobile-tablet{
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    @include text(50px, 900, 63px);
+    color: $text-white;
+
+    @include tablet {
+      @include text(35px, 900, 44px);
+    }
+
+    @include mobile {
+      @include text(25px, 900, 31px);
+    }
+  }
+
+  &__description {
+    @include text(22px, 500, 30px);
+    color: $text-white;
+    margin: 25px 0 35px;
+
+    @include tablet {
+      @include text(17px, 500, 23px);
+      margin: 15px 0;
+    }
+
+    @include mobile {
+      @include text(15px, 500, 21px);
+      margin: 15px 0;
+    }
+  }
+
+  &__form {
+    input[type="text"] {
+      @include text(17px, 500, 28px);
+      padding: 22px 25px;
+      max-width: 425px;
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+
+    @include tablet {
+      div:first-child {
+        display: flex;
+        gap: 8;
+
+        label {
+          flex: 1;
+        }
+      }
+    }
+
+    &__form {
+      input[type="checkbox"] {
+        background-color: $text-yellow;
+        color: $text-yellow;
+
+        p {
+          color: $text-white;
+        }
+      }
+    }
+  }
+
+  .logo {
+    margin-bottom: 50px;
+
+    @include mobile-tablet {
+    }
+
+    &__link {
+      justify-content: center;
+    }
+
+    &__text {
+      color: $text-white;
+      @include text(25px, 800, 31px);
+    }
+
+    &__image {
+      margin-right: 10px;
+    }
+  }
+
+  &__conditions {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    p {
+      @include text(17px, 400, 23px);
+      color: $text-white;
+    }
+
+    a {
+      @include text(17px, 400, 23px);
+      color: $text-yellow;
+      text-decoration: underline;
+    }
+
+    .cbx {
+      display: flex !important;
+      justify-content: center !important;
+      gap: 10px;
+      text-align: left;
+      width: 100%;
+    }
+  }
+}

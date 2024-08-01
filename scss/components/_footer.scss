@@ -1,0 +1,67 @@
+.footer {
+  background-color: $bg-bark-blue-100;
+  text-align: center;
+  padding: 20px;
+
+  &__row {
+    padding-top: 40px;
+  }
+
+  &__nav {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      color: $text-white;
+      margin: 0 10px;
+      justify-content: space-between;
+      text-decoration: none;
+      padding: 35px 25px;
+      @include text(17px, 700, 21px);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__icons {
+    margin: 10px 20px;
+
+    a {
+      margin: 0 5px;
+      color: $text-white;
+      font-size: 20px;
+      padding: 200px;
+    }
+  }
+
+  &__text {
+    @include text(15px, 400, 17px);
+    padding: 10px 0;
+    font-size: 14px;
+    margin: 10px 0;
+    color: $text-light-gray;
+  }
+
+  .nav {
+    @include tablet {
+      &__list {
+        gap: 15px;
+      }
+      &__link {
+        @include text(13px, 700, 16px);
+      }
+    }
+
+    @include mobile-tablet {
+      order: -1;
+    }
+  }
+
+  .social {
+    order: -2;
+  }
+}

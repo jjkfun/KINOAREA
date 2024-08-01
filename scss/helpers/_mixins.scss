@@ -1,0 +1,24 @@
+@mixin text($size, $weight, $height: 1.25) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin mobile($maxValue: 560px) {
+  @media (max-width: $maxValue) {
+    @content;
+  }
+}
+
+@mixin tablet($maxValue: 1024px, $minValue: 561px) {
+  @media (max-width: $maxValue) and (min-width: $minValue) {
+    @content;
+  }
+}
+
+
+@mixin mobile-tablet($maxValue: 1024px, $minValue: 288px) {
+  @media (max-width: $maxValue) and (min-width: $minValue) {
+    @content;
+  }
+}

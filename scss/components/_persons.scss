@@ -1,0 +1,181 @@
+.persons {
+  padding-bottom: 65px;
+
+
+  .section__title {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col-4 {
+    position: relative;
+    width: 33.33%;
+    z-index: 1;
+    padding: 32px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 444px;
+    box-sizing: border-box;
+
+    @include mobile {
+      flex: 1;
+      min-height: 180px;
+      padding: 13px;
+      min-width: 45%;
+    }
+
+    @include mobile(380px) {
+      min-height: 240px;
+      min-width: 100%;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 444px;
+    z-index: -1;
+
+    @include mobile {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__rating {
+    @include text(15px, 500, 20px);
+    color: $text-yellow;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+
+    @include mobile {
+      @include text(12px, 500, 15px);
+      left: 7px;
+      top: 5px;
+    }
+  }
+
+  &__name {
+    @include text(27px, 700, 33px);
+    color: $text-white;
+
+    @include mobile {
+      @include text(15px, 700, 18px);
+    }
+  }
+
+  &__latin {
+    @include text(20px, 600, 24px);
+    color: $text-gray;
+    margin: 5px 0 10px;
+
+    @include mobile {
+      @include text(11px, 600, 13px);
+      margin: 5px 0;
+    }
+  }
+
+  &__age {
+    @include text(15px, 500, 20px);
+    color: $text-yellow;
+
+    @include mobile {
+      @include text(10px, 600, 12px);
+    }
+  }
+
+  .col-4:last-child {
+    padding: 0;
+  }
+
+  &__list {
+    height: 100%;
+    background-color: $bg-bark-blue-100;
+    padding: 28px;
+    box-sizing: border-box;
+    max-height: 444px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+
+    &::-webkit-scrollbar {
+      background-color: $bg-bark-blue-100;
+      border-radius: 10px;
+      height: 7px;
+      width: 7px;
+
+      @include mobile {
+        padding: 0 50px;
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $bg-blue;
+      border-radius: 10px;
+    }
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+
+  &__details {
+    h3 {
+      @include text(20px, 700, 24px);
+      color: $text-white;
+
+      @include mobile {
+        @include text(15px, 600, 18px);
+        margin: 2px 0 2px;
+      }
+    }
+
+    h5 {
+      @include text(15px, 600, 18px);
+      color: $text-bark-blue-100;
+      margin: 2px 0 2px;
+
+      @include mobile {
+        @include text(11px, 600, 13px);
+        margin: 2px 0 2px;
+      }
+    }
+  }
+
+  &__place {
+    @include text(15px, 600, 18px);
+    color: $text-yellow;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-bottom: 2px solid $bg-dark-blue;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
